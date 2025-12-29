@@ -1,4 +1,4 @@
-# Quarto Template for the Tutorial
+# Quarto Template for the Tutoriaㅇㄻㄹㅇl
 
 This repository contains the template for the website tutorial at <https://www.marvinschmitt.com/blog/website-tutorial-quarto/>.
 
