@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Sehyeok Lee">
+<meta name="dcterms.date" content="2024-01-06">
+<meta name="description" content="Notes on Abadir &amp; Magnus Exercise 13.6 regarding quadratic forms and Kronecker products.">
 
-<title>Roman History Research – Lucius cornellius Sulla</title>
+<title>Derivative of a Scalar-Valued Function of a Matrix – Lucius cornellius Sulla</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,27 +26,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./img/laural.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ef29f2a6e560c361099aff322fd88b04.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../img/laural.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-ef29f2a6e560c361099aff322fd88b04.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +71,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -132,18 +104,18 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./img\laural.png" alt="" class="navbar-logo light-content">
-    <img src="./img\laural.png" alt="" class="navbar-logo dark-content">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../img\laural.png" alt="" class="navbar-logo light-content">
+    <img src="../img\laural.png" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Lucius cornellius Sulla</span>
     </a>
   </div>
@@ -154,23 +126,23 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link" href="../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.qmd"> 
+    <a class="nav-link" href="../cv.qmd"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Notes.html"> 
+    <a class="nav-link" href="../Notes.html"> 
 <span class="menu-text">Notes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./roman.html" aria-current="page"> 
+    <a class="nav-link" href="../roman.html"> 
 <span class="menu-text">Roman History</span></a>
   </li>  
 </ul>
@@ -188,120 +160,121 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Roman History Research</h1>
-            <p class="subtitle lead">Collection of thoughts &amp; essays</p>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="RWNvbm9tZXRyaWNz">Econometrics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWF0cml4JTIwQWxnZWJyYQ==">Matrix Algebra <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Tm90ZXM=">Notes <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Derivative of a Scalar-Valued Function of a Matrix</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Matrix Algebra</div>
+    <div class="quarto-category">Econometrics</div>
+    <div class="quarto-category">Notes</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Notes on Abadir &amp; Magnus Exercise 13.6 regarding quadratic forms and Kronecker products.
+  </div>
+</div>
 
 
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Sehyeok Lee </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 6, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
+</header>
 
-<section id="recent-essays" class="level2">
-<h2 class="anchored" data-anchor-id="recent-essays">Recent Essays</h2>
-<p>Here are my research notes and short thoughts on Roman History.</p>
 
+<p>Exercise 13.6 asks about the derivative of a scalar-valued function of a matrix, namely the quadratic form <span class="math inline">\(a^\top X X^\top a\)</span>, where <span class="math inline">\(a\)</span> is a constant vector and <span class="math inline">\(X\)</span> is a matrix.</p>
+<p>In the scalar case, the derivative of <span class="math inline">\(a^2 x^2\)</span> with respect to <span class="math inline">\(x\)</span> is simply <span class="math inline">\(2a^2 x\)</span>, which is straightforward.</p>
+<p>In the matrix case, however, the situation is more subtle. Although the function is still scalar-valued, its argument is a matrix, so the derivative is no longer a simple scalar expression but a linear mapping. To express this derivative precisely, one needs tools such as differentials, vectorization, and properties of the Kronecker product.</p>
+<p><br></p>
+<section id="the-main-problem" class="level3">
+<h3 class="anchored" data-anchor-id="the-main-problem">The Main Problem</h3>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Exercise 13.6 (Bilinear and quadratic forms, matrices)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Abadir &amp; Magnus (Matrix Algebra: Econometric Exercises, Vol. 1), p.&nbsp;357</strong></p>
+<p>Let <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> be two vectors of constants. Find the differential and derivative of the following scalar functions:</p>
+<ol start="2" type="a">
+<li><span class="math inline">\(\varphi(X)=a^\top X X^\top a\)</span></li>
+<li><span class="math inline">\(\varphi(X)=a^\top X^\top X a\)</span></li>
+</ol>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="what-we-should-know" class="level3">
+<h3 class="anchored" data-anchor-id="what-we-should-know">What we should know</h3>
+<p>To solve the problem above, the following properties of the Kronecker product are essential.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Exercise 10.5 (Kroneckered by a scalar)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>(p.&nbsp;277)</strong></p>
+<ol start="2" type="a">
+<li>Show that <span class="math inline">\((A \otimes b)B = (AB)\otimes b\)</span> for any vector <span class="math inline">\(b\)</span> (if <span class="math inline">\(AB\)</span> is defined).</li>
+</ol>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Exercise 10.6 (Kronecker product of vectors)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>(p.&nbsp;277)</strong></p>
+<p>For any two vectors <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, not necessarily of the same order, show that<br>
+<span class="math display">\[
+a \otimes b^\top = ab^\top = b^\top \otimes a.
+\]</span></p>
+</div>
+</div>
 
 
 </section>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1767066948124" data-listing-reading-time-sort="1" data-listing-word-count-sort="167">
-<div class="thumbnail"><a href="./posts/etruscan.html" class="no-external">
-
-<p class="card-img-top"><img src="img\Etruscan_civilization_map.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/etruscan.html" class="no-external">A Short Thought on the Origin of the Etruscans</a>
-</h3>
-<div class="delink listing-description"><a href="./posts/etruscan.html" class="no-external">
-As I expected, this topic is not a subject of recent research, and thus it is no longer considered a particularly novel question in Roman history. Nevertheless, discussions…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/etruscan.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1767066706793" data-listing-reading-time-sort="3" data-listing-word-count-sort="549">
-<div class="thumbnail"><a href="./posts/servius.html" class="no-external">
-
-<p class="card-img-top"><img src="img\ceturia.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/servius.html" class="no-external">Re-evaluating the Reforms of Servius Tullius</a>
-</h3>
-<div class="delink listing-description"><a href="./posts/servius.html" class="no-external">
-Servius Tullius appears to have carried out a reform that changed the basic unit of Rome’s military organization from tribes (regional or clan-based units) to the centuriate…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/servius.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="TWF0cml4JTIwQWxnZWJyYSUyQ0Vjb25vbWV0cmljcyUyQ05vdGVz" data-listing-date-sort="1704517200000" data-listing-file-modified-sort="1767130503615" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="223">
-<div class="thumbnail"><a href="./posts/matrix_derivative.html" class="no-external">
-
-<img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matrix_multiplication_diagram_2.svg/640px-Matrix_multiplication_diagram_2.svg.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/matrix_derivative.html" class="no-external">Derivative of a Scalar-Valued Function of a Matrix</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TWF0cml4JTIwQWxnZWJyYQ=='); return false;">Matrix Algebra</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RWNvbm9tZXRyaWNz'); return false;">Econometrics</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Tm90ZXM='); return false;">Notes</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/matrix_derivative.html" class="no-external">
-<p>Notes on Abadir &amp; Magnus Exercise 13.6 regarding quadratic forms and Kronecker products.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/matrix_derivative.html" class="no-external">
-<div class="listing-date">
-Jan 6, 2024
-</div>
-<div class="listing-author">
-Sehyeok Lee
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

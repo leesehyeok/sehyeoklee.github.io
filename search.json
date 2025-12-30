@@ -35,18 +35,18 @@
     "text": "The History of the War of the Ring\n\narXiv Preprint | Code\nI am creating a comprehensive and detailed history of the conflict that goes beyond the surface-level events. By gathering information from a variety of sources, including my own memories, written accounts, and oral histories, I hope to shed new light on this important period in Middle-earth’s history and provide valuable insights into the motivations and actions of the various players involved.\n\nView the tutorial for this template (+ download link)"
   },
   {
-    "objectID": "posts/etruscan.html",
-    "href": "posts/etruscan.html",
-    "title": "A Short Thought on the Origin of the Etruscans",
+    "objectID": "posts/matrix_derivative.html",
+    "href": "posts/matrix_derivative.html",
+    "title": "Derivative of a Scalar-Valued Function of a Matrix",
     "section": "",
-    "text": "As I expected, this topic is not a subject of recent research, and thus it is no longer considered a particularly novel question in Roman history. Nevertheless, discussions of the early history of Rome almost always address this issue. This is largely because, in the past, the origin of the Etruscans was regarded as a controversial problem, even by ancient historians such as Herodotus.\nIn earlier accounts, including those of Herodotus, the Etruscans were believed to have originated in the East, often associated with Asia Minor. This is partly because the limited available evidence was interpreted in a way that supported this claim.\nIn particular, the large necropolises that developed in the eighth and seventh centuries BC—characterized by elaborate chamber tombs containing aristocratic burials, rich decoration, and exotic grave goods—were often regarded as exhibiting features of Asian origin."
+    "text": "Exercise 13.6 asks about the derivative of a scalar-valued function of a matrix, namely the quadratic form \\(a^\\top X X^\\top a\\), where \\(a\\) is a constant vector and \\(X\\) is a matrix.\nIn the scalar case, the derivative of \\(a^2 x^2\\) with respect to \\(x\\) is simply \\(2a^2 x\\), which is straightforward.\nIn the matrix case, however, the situation is more subtle. Although the function is still scalar-valued, its argument is a matrix, so the derivative is no longer a simple scalar expression but a linear mapping. To express this derivative precisely, one needs tools such as differentials, vectorization, and properties of the Kronecker product.\n\n\nThe Main Problem\n\n\n\n\n\n\nNoteExercise 13.6 (Bilinear and quadratic forms, matrices)\n\n\n\nAbadir & Magnus (Matrix Algebra: Econometric Exercises, Vol. 1), p. 357\nLet \\(a\\) and \\(b\\) be two vectors of constants. Find the differential and derivative of the following scalar functions:\n\n\\(\\varphi(X)=a^\\top X X^\\top a\\)\n\\(\\varphi(X)=a^\\top X^\\top X a\\)\n\n\n\n\n\n\nWhat we should know\nTo solve the problem above, the following properties of the Kronecker product are essential.\n\n\n\n\n\n\nTipExercise 10.5 (Kroneckered by a scalar)\n\n\n\n(p. 277)\n\nShow that \\((A \\otimes b)B = (AB)\\otimes b\\) for any vector \\(b\\) (if \\(AB\\) is defined).\n\n\n\n\n\n\n\n\n\nTipExercise 10.6 (Kronecker product of vectors)\n\n\n\n(p. 277)\nFor any two vectors \\(a\\) and \\(b\\), not necessarily of the same order, show that\n\\[\na \\otimes b^\\top = ab^\\top = b^\\top \\otimes a.\n\\]"
   },
   {
-    "objectID": "cv/index.html",
-    "href": "cv/index.html",
-    "title": "Curriculum vitae",
+    "objectID": "photography/index.html",
+    "href": "photography/index.html",
+    "title": "Photography",
     "section": "",
-    "text": "Download current CV\n  \n\n\n  \n\n\nView the tutorial for this template (+ download link)"
+    "text": "As a wizard and scholar of Middle-earth, I have been studying the magic of the natural world for centuries. Through my self-portraits, I aim to capture the essence of my own being and reflect on my own journey through time. Each photograph is a reflection of my own experiences and emotions. Through my photography, I hope to offer a glimpse into my life as a scholar and adventurer, and inspire others to reflect on their own journeys through the world.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nView the tutorial for this template (+ download link)"
   },
   {
     "objectID": "index.html",
@@ -56,11 +56,32 @@
     "text": "Github\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Email\n  \n\n\n\n\nWelcome to my website!\nRoma General"
   },
   {
-    "objectID": "photography/index.html",
-    "href": "photography/index.html",
-    "title": "Photography",
+    "objectID": "cv/index.html",
+    "href": "cv/index.html",
+    "title": "Curriculum vitae",
     "section": "",
-    "text": "As a wizard and scholar of Middle-earth, I have been studying the magic of the natural world for centuries. Through my self-portraits, I aim to capture the essence of my own being and reflect on my own journey through time. Each photograph is a reflection of my own experiences and emotions. Through my photography, I hope to offer a glimpse into my life as a scholar and adventurer, and inspire others to reflect on their own journeys through the world.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nView the tutorial for this template (+ download link)"
+    "text": "Download current CV\n  \n\n\n  \n\n\nView the tutorial for this template (+ download link)"
+  },
+  {
+    "objectID": "Notes.html",
+    "href": "Notes.html",
+    "title": "Academic Notes",
+    "section": "",
+    "text": "Reviewing exercises and theorems from key texts."
+  },
+  {
+    "objectID": "Notes.html#recent-notes",
+    "href": "Notes.html#recent-notes",
+    "title": "Academic Notes",
+    "section": "",
+    "text": "Reviewing exercises and theorems from key texts."
+  },
+  {
+    "objectID": "posts/etruscan.html",
+    "href": "posts/etruscan.html",
+    "title": "A Short Thought on the Origin of the Etruscans",
+    "section": "",
+    "text": "As I expected, this topic is not a subject of recent research, and thus it is no longer considered a particularly novel question in Roman history. Nevertheless, discussions of the early history of Rome almost always address this issue. This is largely because, in the past, the origin of the Etruscans was regarded as a controversial problem, even by ancient historians such as Herodotus.\nIn earlier accounts, including those of Herodotus, the Etruscans were believed to have originated in the East, often associated with Asia Minor. This is partly because the limited available evidence was interpreted in a way that supported this claim.\nIn particular, the large necropolises that developed in the eighth and seventh centuries BC—characterized by elaborate chamber tombs containing aristocratic burials, rich decoration, and exotic grave goods—were often regarded as exhibiting features of Asian origin."
   },
   {
     "objectID": "posts/servius.html",
