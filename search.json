@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "roman.html",
+    "href": "roman.html",
+    "title": "Roman History Research",
+    "section": "",
+    "text": "Here are my research notes and short thoughts on Roman History."
+  },
+  {
+    "objectID": "roman.html#recent-essays",
+    "href": "roman.html#recent-essays",
+    "title": "Roman History Research",
+    "section": "",
+    "text": "Here are my research notes and short thoughts on Roman History."
+  },
+  {
     "objectID": "projects/index.html",
     "href": "projects/index.html",
     "title": "Projects",
@@ -21,6 +35,13 @@
     "text": "The History of the War of the Ring\n\narXiv Preprint | Code\nI am creating a comprehensive and detailed history of the conflict that goes beyond the surface-level events. By gathering information from a variety of sources, including my own memories, written accounts, and oral histories, I hope to shed new light on this important period in Middle-earth’s history and provide valuable insights into the motivations and actions of the various players involved.\n\nView the tutorial for this template (+ download link)"
   },
   {
+    "objectID": "posts/etruscan.html",
+    "href": "posts/etruscan.html",
+    "title": "A Short Thought on the Origin of the Etruscans",
+    "section": "",
+    "text": "As I expected, this topic is not a subject of recent research, and thus it is no longer considered a particularly novel question in Roman history. Nevertheless, discussions of the early history of Rome almost always address this issue. This is largely because, in the past, the origin of the Etruscans was regarded as a controversial problem, even by ancient historians such as Herodotus.\nIn earlier accounts, including those of Herodotus, the Etruscans were believed to have originated in the East, often associated with Asia Minor. This is partly because the limited available evidence was interpreted in a way that supported this claim.\nIn particular, the large necropolises that developed in the eighth and seventh centuries BC—characterized by elaborate chamber tombs containing aristocratic burials, rich decoration, and exotic grave goods—were often regarded as exhibiting features of Asian origin."
+  },
+  {
     "objectID": "cv/index.html",
     "href": "cv/index.html",
     "title": "Curriculum vitae",
@@ -40,5 +61,33 @@
     "title": "Photography",
     "section": "",
     "text": "As a wizard and scholar of Middle-earth, I have been studying the magic of the natural world for centuries. Through my self-portraits, I aim to capture the essence of my own being and reflect on my own journey through time. Each photograph is a reflection of my own experiences and emotions. Through my photography, I hope to offer a glimpse into my life as a scholar and adventurer, and inspire others to reflect on their own journeys through the world.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nView the tutorial for this template (+ download link)"
+  },
+  {
+    "objectID": "posts/servius.html",
+    "href": "posts/servius.html",
+    "title": "Re-evaluating the Reforms of Servius Tullius",
+    "section": "",
+    "text": "Servius Tullius appears to have carried out a reform that changed the basic unit of Rome’s military organization from tribes (regional or clan-based units) to the centuriate system. However, the detailed nature of this reform remains somewhat controversial."
+  },
+  {
+    "objectID": "posts/servius.html#the-problem-of-numbers",
+    "href": "posts/servius.html#the-problem-of-numbers",
+    "title": "Re-evaluating the Reforms of Servius Tullius",
+    "section": "The Problem of Numbers",
+    "text": "The Problem of Numbers\nAccording to the conventional account, Tullius’ reform divided Roman citizens into five classes based on property, and only the first class was said to have provided eighty centuriae. Considering the meaning of centuria, this would imply that nearly eight thousand individuals were included in the first class alone.\n\n\n\nDiagram: The Centuriate System\n\n\nHowever, when one considers whether there could really have been such a large number of first-class citizens who possessed enough property to equip themselves according to the criteria shown in the table—that is, whether so many wealthy individuals could realistically have existed in society at large—this assumption does not appear particularly plausible. For the same reason, the assumption that citizens were divided into middle-aged and older age groups is also not very convincing.\nIt seems more plausible to assume instead that Tullius’ reform originally divided citizens into two groups: those capable of equipping themselves (regardless of their actual armament, encompassing those from the first class down to the fourth or fifth class in the table) and those who were not.\nOnly later, for some reason—most likely related to taxation, since the revenues thus collected were probably used to pay soldiers’ wages—were these groups subdivided into five classes. Under this assumption, it would make sense that first-class citizens bore 80/190 of the total tax burden."
+  },
+  {
+    "objectID": "posts/servius.html#recruitment-tribe-vs.-centuria",
+    "href": "posts/servius.html#recruitment-tribe-vs.-centuria",
+    "title": "Re-evaluating the Reforms of Servius Tullius",
+    "section": "Recruitment: Tribe vs. Centuria",
+    "text": "Recruitment: Tribe vs. Centuria\nIf the unit of recruitment was the tribe, then selecting two centuriae from a single tribe would require choosing exactly the same number of men from each tribe, regardless of differences in population size or population growth.\nBy contrast, if the unit of recruitment was the centuria, then in order to create sixty centuriae, each tribe could simply be divided into sixty parts and these portions combined. This method would take population proportions and population growth into account."
+  },
+  {
+    "objectID": "posts/servius.html#political-motivation-the-aristocracy",
+    "href": "posts/servius.html#political-motivation-the-aristocracy",
+    "title": "Re-evaluating the Reforms of Servius Tullius",
+    "section": "Political Motivation & The Aristocracy",
+    "text": "Political Motivation & The Aristocracy\nThe latter assumption appears more convincing if one presupposes that Tullius’ reform had a political motivation. If the reform had been intended to weaken the power of the aristocracy—that is, the leaders of each tribe—then the former approach, which ignores population proportions among tribes, would not have been appropriate.\nMoreover, the traditional view that the early republican aristocracy deliberately formed the centuriate assembly and granted it the power of appeal courts and priority voting rights does not seem entirely convincing. This problem is resolved if one assumes that Tullius’ reform was politically motivated.\nIn this view, Tullius drew the manpower of the aristocracy into his own control and, in order to secure their support, granted them the right to elect their own commanders (consules). This interpretation appears more plausible when one recalls that the original meaning of consul was that of a military commander.\nWithin this framework, it becomes possible to argue that the early republican aristocracy did not so much grant authority to the centuriate assembly as have their pre-existing powers from the monarchical period “reconfirmed,” in order to avoid resistance on their part."
   }
 ]

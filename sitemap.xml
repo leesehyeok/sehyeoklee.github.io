@@ -2,11 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://leesehyeok.github.io/roman.html</loc>
-    <lastmod>2025-12-29T23:02:33.380Z</lastmod>
+    <lastmod>2025-12-30T03:33:43.039Z</lastmod>
   </url>
   <url>
     <loc>https://leesehyeok.github.io/projects/index.html</loc>
     <lastmod>2025-12-29T21:39:49.556Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leesehyeok.github.io/posts/etruscan.html</loc>
+    <lastmod>2025-12-30T03:55:48.124Z</lastmod>
   </url>
   <url>
     <loc>https://leesehyeok.github.io/Notes.html</loc>
@@ -23,6 +27,10 @@
   <url>
     <loc>https://leesehyeok.github.io/photography/index.html</loc>
     <lastmod>2025-12-29T21:39:49.555Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leesehyeok.github.io/posts/servius.html</loc>
+    <lastmod>2025-12-30T03:51:46.793Z</lastmod>
   </url>
   <url>
     <loc>https://leesehyeok.github.io/research.html</loc>
